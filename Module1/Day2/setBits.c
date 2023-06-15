@@ -7,7 +7,7 @@
        		     	     0001
        		     	     ----
        		     	     	1
-       increment count, count = 0
+       increment count, count = 1
        x >> 1     then   x = 0100
        
        iteration 2:
