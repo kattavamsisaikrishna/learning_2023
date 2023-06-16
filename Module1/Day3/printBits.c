@@ -4,8 +4,7 @@ void printBits(int n)
 	int size = 32;
 	for(int i = size-1 ; i>=0 ; i--)
 	{
-		unsigned int mask = 1u << i;
-		int bit = (n & mask) ? 1 : 0;
+		int bit = (n >> i) & 1;
 		printf("%d",bit);
 	}
 }
