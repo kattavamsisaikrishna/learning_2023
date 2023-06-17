@@ -67,5 +67,6 @@ int main()
 	
 	decimalToBinary(n);printf("\n");
 	decimalToOctal(n);printf("\n");
-	decimalToHex( n);
+	decimalToHex( n);printf("\n");
+	printf("converting decimal to hex using %%x format specifier = %x",n);
 }
