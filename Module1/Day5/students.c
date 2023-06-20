@@ -24,4 +24,6 @@ int main()
 	{
 		printf("%d) %d %s %d\n",i,s[i].rollno,s[i].name,s[i].age);
 	}
+	
+	free(s);
 }
