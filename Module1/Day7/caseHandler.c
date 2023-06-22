@@ -53,23 +53,18 @@ int main()
 	FILE *fp1,*fp2;
 	fp1 = fopen("f1.txt","r");
 	fp2 = fopen("f2.txt","w");
-	int temp = 1;
-	while(temp)
-	{
-		int option;
-		printf("Enter 1 for uppercase \n");
-		printf("Enter 2 for lowercase\n");
-		printf("Enter 3 for capitalize\n");
-		printf("Enter 4 for normal copy\n");
-		scanf("%d",&option);
-		switch(option)
-		{
-			case 1:	copyFile(fp1,fp2,1);printf("file copied\n");break;
-			case 2: copyFile(fp1,fp2,2);printf("file copied\n");break;
-			case 3: copyFile(fp1,fp2,3);printf("file copied\n");break;
-			case 4: filecopy(fp1,fp2);printf("file copied\n");break;	
-		}
-		temp--;
-	}
 	
+	int option;
+	printf("Enter 1 for uppercase \n");
+	printf("Enter 2 for lowercase\n");
+	printf("Enter 3 for capitalize\n");
+	printf("Enter 4 for normal copy\n");
+	scanf("%d",&option);
+	switch(option)
+	{
+		case 1:	copyFile(fp1,fp2,1);printf("file copied\n");break;
+		case 2: copyFile(fp1,fp2,2);printf("file copied\n");break;
+		case 3: copyFile(fp1,fp2,3);printf("file copied\n");break;
+		case 4: filecopy(fp1,fp2);printf("file copied\n");break;	
+	}
 }
